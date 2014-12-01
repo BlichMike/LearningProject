@@ -1,0 +1,160 @@
+body{
+    background: #2e7eaa url(../vendors/images/bg.jpg) repeat-x top left;
+    font-family: myFont;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../vendors/fonts/Alef-Regular.woff);
+    font-weight: normal;
+}
+@font-face {
+    font-family: myFontBold;
+    src: url(../vendors/fonts/Alef-Bold.woff);
+    font-weight: normal;
+}
+.nav-header{
+    margin-bottom: 15em;
+}
+
+.my-nav {
+    background-color: #f5f5f5;
+    box-shadow: 1px 0px 9px 2px #221F57;
+    height: 50px;
+}
+
+@-webkit-keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.nav-left-btn {
+    border: none;
+    border-radius: 50%;
+    background: inherit;
+    box-shadow: 0px 0px 3px 1px;
+    font-family: -webkit-pictograph;
+    width: 21px;
+    height: 21px;
+    margin-top: 10px;
+    margin-left: 10px;
+    -webkit-animation: spin 3s infinite linear;
+}
+
+.navbar-rtl {
+    direction: rtl;
+    margin-right: 0px;
+}
+
+.img-resize {
+    height: 75px;
+    width: auto;
+    margin-left: 15px;
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all .5s ease-in-out;
+}
+.img-resize:hover {
+    -webkit-filter: grayscale(0%);
+}
+
+.nav-buttons {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav-right-btn {
+    vertical-align: middle;
+    background: inherit;
+    margin-left: 10px;
+}
+
+@-webkit-keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.nav-right-btn:hover {
+    transform: scale(1.2);
+}
+
+.nav-left-btn {
+    border: none;
+    border-radius: 50%;
+    background: inherit;
+    box-shadow: 0px 0px 3px 1px;
+    font-family: -webkit-pictograph;
+    width: 21px;
+    height: 21px;
+    margin-top: 13px;
+    margin-left: 13px;
+    -webkit-animation: spin 3s infinite linear;
+}
+
+.login {
+    position: relative;
+    background: #ebebeb;
+    max-width: 60%;
+    margin: auto;
+    border-radius: 8px;
+    color: #4e575b;
+    min-height: 15em;
+    border: none;
+    box-shadow: 0px 0px 4px 2px;
+}
+
+.x {
+    position: absolute;
+}
+
+.login-title{
+    text-align: center;
+}
+
+.login-form {
+    margin-right: auto;
+    margin-left: 1em;
+}
+
+.login-form-rtl{
+    float: right;
+    direction: rtl;
+}
+
+.login-form-lbl {
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+
+.login-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+label.control-label{
+    direction: rtl;
+}
+
+.text-right{
+    text-align: right;
+    position: relative;
+    top: 6px;
+}
+
+.login-text:hover{
+    white-space: normal;
+}
+
+.submit{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #205877;
+    border: none;
+    border-radius: 0 0 4px 4px;
+    color: #f5f5f5;
+}
