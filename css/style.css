@@ -158,3 +158,24 @@ label.control-label{
     border-radius: 0 0 4px 4px;
     color: #f5f5f5;
 }
+
+.my-table{
+    box-shadow: 1px 0px 9px 2px #221F57;
+    background-color: rgba(245, 245, 245, 0.34);
+    direction: rtl;
+}
+
+.my-pagination{
+    box-shadow: 1px 0px 9px 2px #221F57;
+    margin-top: 0;
+}
+
+.sort-icon{
+    float: left;
+    border:none;
+    background: none;
+}
+
+.flipped{
+    -webkit-transform: scaleX(-1);
+}

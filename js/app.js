@@ -21,6 +21,13 @@ $( document ).ready(function() {
             });
         };
 
+        var addFlipSortIconEvent = function () {
+            var sortIcon = $(".sort-icon");
+            sortIcon.on("click", function () {
+                $(this).hasClass("flipped")? $(this).removeClass("flipped") : $(this).addClass("flipped");
+            });
+        };
+
         var resetErrorMessages = function () {
             user.parent().parent().removeClass('has-error');
             password.parent().parent().removeClass('has-error');
@@ -47,6 +54,7 @@ $( document ).ready(function() {
 
         var addEvents = function () {
             addInputValidationEvent();
+            addFlipSortIconEvent();
         };
 
         var init = function() {
