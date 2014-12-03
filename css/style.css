@@ -165,6 +165,10 @@ label.control-label{
     direction: rtl;
 }
 
+.table-header{
+    text-align: center;
+}
+
 .my-pagination{
     box-shadow: 1px 0px 9px 2px #221F57;
     margin-top: 0;
@@ -174,8 +178,4 @@ label.control-label{
     float: left;
     border:none;
     background: none;
-}
-
-.flipped{
-    -webkit-transform: scaleX(-1);
 }

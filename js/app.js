@@ -24,7 +24,18 @@ $( document ).ready(function() {
         var addFlipSortIconEvent = function () {
             var sortIcon = $(".sort-icon");
             sortIcon.on("click", function () {
-                $(this).hasClass("flipped")? $(this).removeClass("flipped") : $(this).addClass("flipped");
+                if ($(this).hasClass("glyphicon-sort")) {
+                    $(this).removeClass("glyphicon-sort");
+                    $(this).addClass("glyphicon-sort-by-attributes");
+                }
+                else if ($(this).hasClass("glyphicon-sort-by-attributes")) {
+                    $(this).removeClass("glyphicon-sort-by-attributes");
+                    $(this).addClass("glyphicon-sort-by-attributes-alt");
+                }
+                else if ($(this).hasClass("glyphicon-sort-by-attributes-alt")){
+                    $(this).removeClass("glyphicon-sort-by-attributes-alt");
+                    $(this).addClass("glyphicon-sort-by-attributes");
+                }
             });
         };
 
